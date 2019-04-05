@@ -15,3 +15,50 @@ theme_set(theme_bw())
 ```{r read}
 atividade = read_projectdata()
 ```
+
+Análise exploratória
+
+1) Quais os partidos onde seus parlamentares mais e menos tuítam, por proporção?
+```{r}
+  
+```
+
+	os que mais tuítam: PT e PSL por sua relevância nas casas e pela maior polarização existente em torno dos partidos.
+	os que menos tuítam: Rede e PHS por serem partidos com menos polarização.
+
+2) Quais as UF onde seus parlamentares mais e menos tuítam?
+```{r}
+
+```
+
+	Os que mais tuítam: São Paulo e Rio Grande do Sul, por serem estados onde suas populações possuem mais acesso a internet.
+	Os que menos tuítam: Piauí e Maranhão, por serem estados onde suas populações possuem menos acesso a internet.
+
+3) Quais os parlamentares mais e menos ativos no twitter?
+```{r}
+
+```
+
+	Mais ativos: parlamentares de estados com grande número de eleitores.
+	Menos ativos: parlamentares de estados com pequeno número de eleitores.
+
+4) Quais os parlamentares que mais e menos tuítam conteúdo próprio, ou seja, que não retuítam?
+```{r}
+
+```
+
+Os que mais retuítam: parlamentares de partidos mais populares
+Os que menos retuítam: parlamentares de partidos menos populares.	
+
+5) Quais os parlamentares que geram mais reações (engajamento) em seus tuítes?
+```{r}
+
+```
+
+6) Quais as UF que possuem mais parlamentares, por proporção, que não apresentaram nenhuma atividade no twitter?
+```{r}
+
+```
+
+	Parlamentares de estados com poucos usuários do twitter.
+
