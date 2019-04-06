@@ -20,11 +20,19 @@ Análise exploratória
 
 1) Quais os partidos onde seus parlamentares mais e menos tuítam, por proporção?
 ```{r}
+  atividade %>% ggplot(aes(x = n_proprio, y = partido)) %>% + geom_boxplot()
+```
+Podemos observar, pelo gráfico de boxplots, que os partidos onde os parlamentares mais se tuítam tuítes próprios, proporcionalmente, são os do PODEMOS e do Partido dos Trabalhadores. Em contra partida, vemos que os partidos onde seus parlamentares menos tuítam tuítes próprios são os do AVANTE, PATRIOTAs, PMN, PV e os denominados s/partido.
+
+1.1) Dos 5 partidos onde seus parlamentares mais tuítam tuítes próprios, quais os que mais e menos retuíta?
+  Pela análise anterior vemos que os 5 partidos onde seus paralemnetraes mais tuítam tuítes próprios são o PODEMOS, PT, PSOL, PSL e PSB.
   
+```{r}
+atividade %>% filter(partido == "PODE" | partido == "PT" | partido == "PSOL" | partido == "PSL" | partido == "PSB") %>% ggplot(aes(x = n_retweet, y = partido)) + geom_boxplot() 
+
 ```
 
-	os que mais tuítam: PT e PSL por sua relevância nas casas e pela maior polarização existente em torno dos partidos.
-	os que menos tuítam: Rede e PHS por serem partidos com menos polarização.
+Dos partidos onde seus parlamentares mais tuítam tuítes próprios o que mais e menos retuítam é o PT e o PSOL, respectivamente. A ordem ficou a seguinte: PT, PSL, PSB, PODEMOS e PSOL.
 
 2) Quais as UF onde seus parlamentares mais e menos tuítam?
 ```{r}
